@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация Twitch успешна!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0e0e10;
+            color: #efeff1;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background-color: #1f1f23;
+            border-radius: 16px;
+            padding: 50px 40px;
+            text-align: center;
+            max-width: 480px;
+            width: 100%;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+            border: 1px solid #9146ff;
+            animation: fadeIn 0.6s ease-out;
+        }
+        .icon-container {
+            width: 72px;
+            height: 72px;
+            background: #9146ff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 24px auto;
+            box-shadow: 0 0 20px rgba(145, 70, 255, 0.4);
+        }
+        .icon {
+            width: 32px;
+            height: 32px;
+            fill: #ffffff;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 26px;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            letter-spacing: -0.5px;
+        }
+        p {
+            color: #adadb8;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0 0 30px 0;
+        }
+        .status-badge {
+            display: inline-block;
+            background-color: rgba(0, 245, 140, 0.1);
+            color: #00f58c;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="icon-container">
+        <!-- Минималистичная иконка галочки -->
+        <svg class="icon" viewBox="0 0 24 24">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+        </svg>
+    </div>
+
+    <h1>Angel`s Dreams успешно подключена!</h1>
+    <p>Все необходимые данные были переданы. Теперь вы можете спокойно закрыть эту вкладку браузера и вернуться к игре.</p>
+
+    <div class="status-badge">Соединение установлено</div>
+</div>
+
+</body>
+</html>
